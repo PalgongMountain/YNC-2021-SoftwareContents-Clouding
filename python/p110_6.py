@@ -4,12 +4,10 @@
 이름 : 임지홍
 """
 
-food_cost = int(input("음식 비용: "))
-tip_str = input("팁 비율: ")
+food_cost = int(input("음식 비용을 입력하세요 : "))
+tip = int(input("팁의 비율을 입력하세요(%): "))
 
-tip = int(tip_str[0:2])
+total = int(food_cost + food_cost * (tip/100))
 
-total = food_cost + food_cost * (tip/100)
-
-print(f"food = {food_cost}, tip = {tip}")
+print(f"음식 비용 = {food_cost}\n팁 = {tip}%")
 print(f"총액: {total} 달러")
